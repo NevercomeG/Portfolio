@@ -7,6 +7,8 @@
 }
 
 .navbar {
+
+  backdrop-filter: blur(8px); 
   background: #131313;
   height: 80px;
   display: flex;
@@ -16,9 +18,13 @@
   position: sticky;
   top: 0;
   z-index: 999;
+
 }
 
 .navbar__container {
+
+  height: 100vh;
+	width: 50%;
   display: flex;
   justify-content: space-between;
   height: 80px;
@@ -236,6 +242,17 @@ background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, F
     align-items: center;
 }
 
+.hero:after{
+  content: '';
+  position: absolute;
+  height: 1080px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent 90%, rgb(19, 19, 19) 100%);
+}
+
 .hero__container {
   display: flex;
   flex-direction: column;
@@ -303,6 +320,7 @@ background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, F
 .main {
   background-color: #131313;
   padding: 10rem 0;
+
 }
 
 .main__container {
@@ -505,7 +523,12 @@ background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, F
 
 /* formation Section */
 .formation {
-  background: #131313;
+  background-image: url(/img/3\ \(1\).jpg);
+  height: 1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
