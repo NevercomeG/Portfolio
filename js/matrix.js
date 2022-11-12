@@ -38,7 +38,7 @@ function Delete() {
 
 	// If sentence has been deleted then start to display the next sentence
 	if(text === '') {
-		_ELEMENT.innerHTML = "　"; //YES YES YES  EMPTY INSIVIBLE CHARACTER
+		_ELEMENT.innerHTML = "."; //YES YES YES  EMPTY INSIVIBLE CHARACTER
 		clearInterval(_INTERVAL_VAL);
 
 		// If last sentence then display the first one, else move to the next
